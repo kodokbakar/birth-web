@@ -97,7 +97,7 @@ li a:hover {
 }
 
 .text-con h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-family: 'Playfair Display', serif;
   font-weight: 800;
   color: #333;
@@ -213,6 +213,8 @@ li a:hover {
   opacity: 0;
   transition: opacity 0.5s ease;
   border-radius: 5px;
+  text-align: center;
+font-family: 'Poppins', sans-serif;
 }
 
 .gallery-item:hover .overlay {
