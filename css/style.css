@@ -130,3 +130,106 @@ li a:hover {
   padding: 20px;
   cursor: default;
 }
+
+.gallery-text {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.gallery-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-text span.muncul {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-container {
+  width: 68%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /*border: 1px solid blue;*/
+  border-radius: 10px;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 5px;
+}
+
+.gallery-item {
+  width: 32%;
+  /*padding: 10px;*/
+  border-radius: 20px;
+  margin: 5px;
+  height: auto;
+  /*border: 2px solid red;*/
+  /*padding: 5px;*/
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+  filter: blur(4px);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 5px;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease;
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}

@@ -23,40 +23,67 @@
 </head>
 
 <body>
-  <ul>
-    <li><a href="#row">Our</a></li>
-    <li><a href="#">Memories</a></li>
-    <li><a href="#">Letter</a></li>
-  </ul>
-  <div class="container">
-    <div class="row">
-      <div class="col-1">
-        <div class="text-con">
-          <h1>Asep Bawang</h1>
-          <p>Kulitmu yang merah kecokelatan, bak lembayung senja yang merona malu. Saat kuiris tubuhmu yang teguh, harum
-            tajam menusuk kalbu, namun tak mengurangi pesonamu. Kau bumbu cinta dalam masakan, air mataku tumpah, bukan
-            karena luka, tapi karena rasa yang kau sempurnakan.</p>
-        </div>
-        <div class="img-con">
-          <img class="cake-image" src="img/cake.png" alt="birthday cake"/>
-        </div>
+<ul>
+  <li><a href="#row">Our</a></li>
+  <li><a href="#gallery">Memories</a></li>
+  <li><a href="#">Letter</a></li>
+</ul>
+<div class="container">
+  <div class="row" id="row">
+    <div class="col-1">
+      <div class="text-con">
+        <h1>Asep Bawang</h1>
+        <p>Kulitmu yang merah kecokelatan, bak lembayung senja yang merona malu. Saat kuiris tubuhmu yang teguh, harum
+          tajam menusuk kalbu, namun tak mengurangi pesonamu. Kau bumbu cinta dalam masakan, air mataku tumpah, bukan
+          karena luka, tapi karena rasa yang kau sempurnakan.</p>
       </div>
-      <div class="col-2">
-        <div class="text-con">
-          <h1>Abel Anggur</h1>
-          <p>Oh, Abel Anggur, anggur merah delima. Kulitmu bagai permata berkilau, menyimpan rasa manis yang mendayu.
-            Setiap gigitan, ledakan nektar surgawi, membuai sukma dalam rindu yang memabukkan. Bagai ciuman pertama di
-            bawah hujan meteor, kaulah kenikmatan yang tak lekang oleh waktu, terpatri abadi dalam lautan memori.
-          </p>
-        </div>
-        <div class="img-con">
-          <img class="cake-image" src="img/roman.png" alt="birthday cake"/>
-        </div>
+      <div class="img-con">
+        <img class="cake-image" src="img/cake.png" alt="birthday cake"/>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="text-con">
+        <h1>Abel Anggur</h1>
+        <p>Oh, Abel Anggur, anggur merah delima. Kulitmu bagai permata berkilau, menyimpan rasa manis yang mendayu.
+          Setiap gigitan, ledakan nektar surgawi, membuai sukma dalam rindu yang memabukkan. Bagai ciuman pertama di
+          bawah hujan meteor, kaulah kenikmatan yang tak lekang oleh waktu, terpatri abadi dalam lautan memori.
+        </p>
+      </div>
+      <div class="img-con">
+        <img class="cake-image" src="img/roman.png" alt="birthday cake"/>
       </div>
     </div>
   </div>
-  <script src="js/app.js"></script>
-
+  <h1 class="gallery-text" id="gallery">Memories</h1>
+  <div class="gallery">
+    <div class="gallery-container">
+      <div class="gallery-row">
+        <div class="gallery-item zoom-in">
+          <img src="img/gambar1.jpeg" alt="Gambar 1">
+          <div class="overlay">
+            <h2>Judul Gambar 1</h2>
+            <p>Deskripsi singkat tentang gambar 1.</p>
+          </div>
+        </div>
+        <div class="gallery-item zoom-in">
+          <img src="img/gambar3.jpeg" alt="Gambar 3">
+          <div class="overlay">
+            <h2>Judul Gambar 2</h2>
+            <p>Deskripsi singkat tentang gambar 2.</p>
+          </div>
+        </div>
+        <div class="gallery-item zoom-in">
+          <img src="img/gambar2.jpeg" alt="Gambar 2">
+          <div class="overlay">
+            <h2>Judul Gambar 3</h2>
+            <p>Deskripsi singkat tentang gambar 3.</p>
+          </div>
+        </div>
+      </div>
+      <script src="js/app.js"></script>
+    </div>
+  </div>
+</div>
 </body>
 
 </html>
